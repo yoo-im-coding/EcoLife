@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="emerald">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>EcoLife — About Us</title>
+
+    <!-- Tailwind Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI full build (works without Tailwind config when using Play CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"/>
+
+    <!-- Optional: Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      :root { --rounded-box: 1rem; }
+      body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', Arial, sans-serif; }
+    </style>
+  </head>
+
+  <body class="bg-base-100 text-base-content">
+    <!-- Navbar -->
+    <header class="navbar bg-base-100/60 backdrop-blur supports-[backdrop-filter]:bg-base-100/60 sticky top-0 z-50 border-b border-base-200">
+      <div class="navbar-start">
+        <a class="btn btn-ghost text-xl font-extrabold tracking-tight" href="#">
+          <span class="text-primary">Eco</span>Life
+        </a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end gap-2">
+        <label class="swap swap-rotate btn btn-ghost btn-sm">
+          <input type="checkbox" class="theme-controller" value="emerald" checked />
+          <svg class="swap-off fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71A8.969,8.969,0,0,0,12,21a9.049,9.049,0,0,0,9-9h-1a8,8,0,1,1-8-8V3A9,9,0,0,0,5.64,17Z"/></svg>
+          <svg class="swap-on fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.76,4.84l-1.8-1.79L3.17,4.84,4.98,6.64ZM1,13H4V11H1Zm9-9H11V1H10ZM19.02,6.64l1.8-1.8L19.02,3,17.22,4.84ZM20,13h3V11H20ZM11,23h1V20H11ZM17.22,19.16,19,21,20.84,19.16,19,17.36ZM3.17,19.16,4.98,21,6.76,19.16,4.98,17.36Z"/></svg>
+        </label>
+        <a class="btn btn-primary btn-sm" href="products.html" >Shop now</a>
+      </div>
+    </header>
+
+    <!-- Hero / Intro -->
+    <section class="hero min-h-[48vh] bg-gradient-to-br from-primary/10 via-base-100 to-secondary/10">
+      <div class="hero-content text-center">
+        <div class="max-w-3xl">
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+            About EcoLife
+          </h1>
+          <p class="py-6 text-base md:text-lg opacity-80">
+            We help people live well without costing the Earth. Since 1997, EcoLife has connected communities to sustainable products, transparent data, and fair partnerships that protect people and the planet.
+          </p>
+          <div class="flex justify-center gap-3">
+            <a href="#history" class="btn btn-primary">Our story</a>
+            <a href="#team" class="btn btn-ghost">Meet the team</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="container mx-auto px-4 md:px-6 lg:px-8 py-10 space-y-16">
+      <!-- Company History & Background -->
+      <section id="history" class="grid lg:grid-cols-2 gap-10 items-center">
+        <div class="prose max-w-none">
+          <h2 class="text-3xl md:text-4xl font-extrabold">Company history and background</h2>
+          <p class="mt-4">
+            EcoLife started in 1997 as a small collective partnering with local organic farms and fair‑trade co‑ops. Our mission was simple: make high‑quality sustainable goods accessible, verifiable, and affordable.
+          </p>
+          <p>
+            Over the years, we built long‑term relationships across the supply chain and introduced data‑backed impact tracking, ensuring that every claim we publish can be traced to real outcomes for people and ecosystems.
+          </p>
+          <div class="grid sm:grid-cols-3 gap-4 mt-6">
+            <div class="stat bg-base-200 rounded-box">
+              <div class="stat-title">Founded</div>
+              <div class="stat-value text-primary">1997</div>
+              <div class="stat-desc">28+ years of impact</div>
+            </div>
+            <div class="stat bg-base-200 rounded-box">
+              <div class="stat-title">Partners</div>
+              <div class="stat-value text-primary">250+</div>
+              <div class="stat-desc">Ethical suppliers</div>
+            </div>
+            <div class="stat bg-base-200 rounded-box">
+              <div class="stat-title">Products traced</div>
+              <div class="stat-value text-primary">10k+</div>
+              <div class="stat-desc">with proof of impact</div>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-200 shadow-xl">
+          <figure class="aspect-[4/3] overflow-hidden">
+            <!-- Replace with actual photo -->
+            <img src="https://images.unsplash.com/photo-1523978591478-c753949ff840?q=80&w=1600&auto=format&fit=crop" alt="EcoLife origins — local farm partners" class="w-full h-full object-cover"/>
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title">From co‑ops to a global community</h3>
+            <p>We grew by listening to producers and customers—and by proving sustainability with data, not slogans.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sustainability Values -->
+      <section id="values" class="space-y-6">
+        <h2 class="text-3xl md:text-4xl font-extrabold">EcoLife’s sustainability values</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card bg-base-200">
+            <div class="card-body">
+              <h3 class="card-title">Radical transparency</h3>
+              <p>Every product lists sourcing, certifications, and lifecycle impact—no greenwashing, just receipts.</p>
+              <div class="badge badge-primary badge-outline">Traceable</div>
+            </div>
+          </div>
+          <div class="card bg-base-200">
+            <div class="card-body">
+              <h3 class="card-title">People first</h3>
+              <p>Fair wages, safe working conditions, and shared value with smallholders and co‑ops.</p>
+              <div class="badge badge-success badge-outline">Fair</div>
+            </div>
+          </div>
+          <div class="card bg-base-200">
+            <div class="card-body">
+              <h3 class="card-title">Circular mindset</h3>
+              <p>Design for durability and reuse, reduce waste with refill and take‑back programs.</p>
+              <div class="badge badge-secondary badge-outline">Circular</div>
+            </div>
+          </div>
+          <div class="card bg-base-200">
+            <div class="card-body">
+              <h3 class="card-title">Biodiversity protection</h3>
+              <p>Regenerative agriculture and habitat conservation embedded in supplier onboarding.</p>
+              <div class="badge badge-accent badge-outline">Regenerative</div>
+            </div>
+          </div>
+          <div class="card bg-base-200">
+            <div class="card-body">
+              <h3 class="card-title">Low‑carbon logistics</h3>
+              <p>Route optimization, rail priority, and verified offsets for unavoidable emissions.</p>
+              <div class="badge badge-info badge-outline">Low‑carbon</div>
+            </div>
+          </div>
+          <div class="card bg-base-200">
+            <div class="card-body">
+              <h3 class="card-title">Open data</h3>
+              <p>Public API and annual impact report to keep us accountable and you informed.</p>
+              <div class="badge badge-neutral badge-outline">Open</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications & Partnerships -->
+      <section id="certs" class="space-y-6">
+        <h2 class="text-3xl md:text-4xl font-extrabold">Certifications and partnerships</h2>
+        <div class="grid lg:grid-cols-3 gap-6">
+          <div class="card bg-base-200">
+            <div class="card-body">
+              <div class="flex items-center gap-3">
+                <div class="avatar placeholder">
+                  <div class="bg-primary text-primary-content rounded-full w-12">
+                    <span class="text-lg font-bold">FT</span>
+                  </div>
+                </div>
+                <h3 class="card-title">Fair Trade Certified</h3>
+              </div>
+              <p>We collaborate with Fair Trade certified co‑ops to ensure equitable pricing and community investment.</p>
+              <div class="card-actions">
+                <div class="badge badge-primary">Ethical</div>
+                <div class="badge badge-ghost">Community</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-200">
+            <div class="card-body">
+              <div class="flex items-center gap-3">
+                <div class="avatar placeholder">
+                  <div class="bg-secondary text-secondary-content rounded-full w-12">
+                    <span class="text-lg font-bold">ORG</span>
+                  </div>
+                </div>
+                <h3 class="card-title">Organic Supply</h3>
+              </div>
+              <p>Key product lines are certified organic, from soil health to chemical‑free processing.</p>
+              <div class="card-actions">
+                <div class="badge badge-secondary">Organic</div>
+                <div class="badge badge-ghost">Soil</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-200">
+            <div class="card-body">
+              <div class="flex items-center gap-3">
+                <div class="avatar placeholder">
+                  <div class="bg-accent text-accent-content rounded-full w-12">
+                    <span class="text-lg font-bold">SDG</span>
+                  </div>
+                </div>
+                <h3 class="card-title">SDG Partnerships</h3>
+              </div>
+              <p>Alliances with NGOs and innovators to advance UN SDGs—responsible consumption, clean energy, and resilient cities.</p>
+              <div class="card-actions">
+                <div class="badge badge-accent">Impact</div>
+                <div class="badge badge-ghost">UN SDGs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team (photos and brief bios) -->
+      <section id="team" class="space-y-6">
+        <h2 class="text-3xl md:text-4xl font-extrabold">Meet the team</h2>
+        <p class="opacity-80">A small team with a global mindset—sustainability experts, technologists, and community builders.</p>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Team Card -->
+          <div class="card bg-base-200 shadow-md hover:shadow-xl transition-shadow">
+            <figure class="px-6 pt-6">
+              <div class="avatar">
+                <div class="w-28 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 overflow-hidden">
+                  <!-- Replace with real photo -->
+                  <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop" alt="Team member"/>
+                </div>
+              </div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h3 class="card-title">Sander Tamm</h3>
+              <p class="text-sm opacity-80">Co‑Founder & CEO</p>
+              <p class="text-sm">Leads strategy and impact verification. Advocate for data‑driven sustainability.</p>
+              <div class="card-actions">
+                <div class="badge badge-outline">Strategy</div>
+                <div class="badge badge-outline">Impact</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-200 shadow-md hover:shadow-xl transition-shadow">
+            <figure class="px-6 pt-6">
+              <div class="avatar">
+                <div class="w-28 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=800&auto=format&fit=crop" alt="Team member"/>
+                </div>
+              </div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h3 class="card-title">Nino Gabrielashvili</h3>
+              <p class="text-sm opacity-80">Co‑Founder & COO</p>
+              <p class="text-sm">Operational excellence and partnerships with ethical brands and co‑ops.</p>
+              <div class="card-actions">
+                <div class="badge badge-outline">Operations</div>
+                <div class="badge badge-outline">Partnerships</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more team members -->
+          <div class="card bg-base-200 shadow-md hover:shadow-xl transition-shadow">
+            <figure class="px-6 pt-6">
+              <div class="avatar">
+                <div class="w-28 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=800&auto=format&fit=crop" alt="Team member"/>
+                </div>
+              </div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h3 class="card-title">Jordan Lee</h3>
+              <p class="text-sm opacity-80">Head of Sustainability</p>
+              <p class="text-sm">Lifecycle analysis and supplier onboarding for measurable outcomes.</p>
+              <div class="card-actions">
+                <div class="badge badge-outline">LCA</div>
+                <div class="badge badge-outline">Supply</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team gallery (optional) -->
+        <div class="mt-4">
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="checkbox" />
+            <div class="collapse-title text-lg font-semibold">See our studio and field work</div>
+            <div class="collapse-content">
+              <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-2">
+                <img class="rounded-box object-cover w-full h-40" src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=800&auto=format&fit=crop" alt="Workshop"/>
+                <img class="rounded-box object-cover w-full h-40" src="https://images.unsplash.com/photo-1472145246862-b24cf25c4a36?q=80&w=800&auto=format&fit=crop" alt="Farm visit"/>
+                <img class="rounded-box object-cover w-full h-40" src="https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=800&auto=format&fit=crop" alt="Packaging"/>
+                <img class="rounded-box object-cover w-full h-40" src="https://images.unsplash.com/photo-1470922791230-69519a0e0fae?q=80&w=800&auto=format&fit=crop" alt="Community project"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Timeline / Milestones -->
+      <section id="timeline" class="space-y-6">
+        <h2 class="text-3xl md:text-4xl font-extrabold">Milestones</h2>
+
+        <!-- DaisyUI timeline -->
+        <ul class="timeline timeline-vertical lg:timeline-horizontal">
+          <li>
+            <div class="timeline-start timeline-box bg-base-200">
+              <h4 class="font-bold">1997 — Founded</h4>
+              <p>EcoLife launches with first organic product line and local co‑op partners.</p>
+            </div>
+            <div class="timeline-middle">
+              <div class="badge badge-primary">1997</div>
+            </div>
+            <hr class="bg-base-300"/>
+          </li>
+
+          <li>
+            <hr class="bg-base-300"/>
+            <div class="timeline-middle">
+              <div class="badge badge-secondary">2005</div>
+            </div>
+            <div class="timeline-end timeline-box bg-base-200">
+              <h4 class="font-bold">Fair Trade expansion</h4>
+              <p>Network of certified fair trade producers spans three regions.</p>
+            </div>
+            <hr class="bg-base-300"/>
+          </li>
+
+          <li>
+            <div class="timeline-start timeline-box bg-base-200">
+              <h4 class="font-bold">Data verification</h4>
+              <p>Introduced product‑level impact tracking and supplier audits.</p>
+            </div>
+            <div class="timeline-middle">
+              <div class="badge badge-accent">2012</div>
+            </div>
+            <hr class="bg-base-300"/>
+          </li>
+
+          <li>
+            <hr class="bg-base-300"/>
+            <div class="timeline-middle">
+              <div class="badge badge-info">2018</div>
+            </div>
+            <div class="timeline-end timeline-box bg-base-200">
+              <h4 class="font-bold">Global NGO alliances</h4>
+              <p>Launched biodiversity restoration projects with international partners.</p>
+            </div>
+            <hr class="bg-base-300"/>
+          </li>
+
+          <li>
+            <div class="timeline-start timeline-box bg-base-200">
+              <h4 class="font-bold">Recognition</h4>
+              <p>Member of leading sustainability innovation networks.</p>
+            </div>
+            <div class="timeline-middle">
+              <div class="badge badge-success">2023</div>
+            </div>
+            <hr class="bg-base-300"/>
+          </li>
+
+          <li>
+            <hr class="bg-base-300"/>
+            <div class="timeline-middle">
+              <div class="badge badge-neutral">2025</div>
+            </div>
+            <div class="timeline-end timeline-box bg-base-200">
+              <h4 class="font-bold">AI‑powered discovery</h4>
+              <p>Launched platform to match shoppers with ethical brands using verified data.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Callout / CTA -->
+      <section class="card bg-gradient-to-br from-primary/15 to-secondary/15 border border-base-200">
+        <div class="card-body md:flex md:items-center md:justify-between gap-6">
+          <div>
+            <h3 class="card-title">Want the full impact report?</h3>
+            <p class="opacity-80">Download our latest sustainability report with methodology, scope, and product‑level metrics.</p>
+          </div>
+          <div class="card-actions">
+            <a class="btn btn-primary">Download PDF</a>
+            <a class="btn btn-ghost">Explore partners</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-base-200 text-base-content p-10 mt-10">
+      <aside>
+        <a class="btn btn-ghost text-xl font-extrabold"><span class="text-primary">Eco</span>Life</a>
+        <p>Transparent sustainability, powered by community and data.</p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About</a>
+        <a class="link link-hover">Careers</a>
+        <a class="link link-hover">Press</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Resources</h6>
+        <a class="link link-hover">Impact report</a>
+        <a class="link link-hover">Certifications</a>
+        <a class="link link-hover">Supplier portal</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Contact</h6>
+        <a class="link link-hover">hello@ecolife.example</a>
+        <a class="link link-hover">+880 1234‑567890</a>
+        <a class="link link-hover">Khulna, Bangladesh</a>
+      </nav>
+    </footer>
+  </body>
+</html>
