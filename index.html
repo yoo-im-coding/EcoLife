@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="emerald">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoLife — Home</title>
+
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- DaisyUI -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"/>
+
+  <!-- Optional font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-base-100 text-base-content">
+
+<!-- Navbar / Welcome Banner -->
+
+
+<header class="navbar bg-base-100/60 backdrop-blur supports-[backdrop-filter]:bg-base-100/60 sticky top-0 z-50 border-b border-base-200">
+      <div class="navbar-start">
+        <a class="btn btn-ghost text-xl font-extrabold tracking-tight" href="#">
+          <span class="text-primary">Eco</span>Life
+        </a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end gap-2">
+        <label class="swap swap-rotate btn btn-ghost btn-sm">
+          <input type="checkbox" class="theme-controller" value="emerald" checked />
+          <svg class="swap-off fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71A8.969,8.969,0,0,0,12,21a9.049,9.049,0,0,0,9-9h-1a8,8,0,1,1-8-8V3A9,9,0,0,0,5.64,17Z"/></svg>
+          <svg class="swap-on fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.76,4.84l-1.8-1.79L3.17,4.84,4.98,6.64ZM1,13H4V11H1Zm9-9H11V1H10ZM19.02,6.64l1.8-1.8L19.02,3,17.22,4.84ZM20,13h3V11H20ZM11,23h1V20H11ZM17.22,19.16,19,21,20.84,19.16,19,17.36ZM3.17,19.16,4.98,21,6.76,19.16,4.98,17.36Z"/></svg>
+        </label>
+        <a class="btn btn-primary btn-sm" href="products.html" >Shop now</a>
+      </div>
+    </header>
+<!-- Hero Section -->
+<section class="hero min-h-[70vh]" style="background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1600&auto=format&fit=crop');">
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="hero-content text-center text-neutral-content">
+    <div class="max-w-xl">
+      <h1 class="mb-5 text-5xl font-bold">Live Well. Live Green.</h1>
+      <p class="mb-5">EcoLife connects you with sustainable products and ethical brands that care for people and the planet.</p>
+      <a class="btn btn-primary">Explore Products</a>
+    </div>
+  </div>
+</section>
+
+<!-- Introduction / Mission -->
+<section class="py-16 px-6 text-center max-w-4xl mx-auto">
+  <h2 class="text-3xl font-extrabold mb-4">Our Mission</h2>
+  <p class="opacity-80 text-lg">
+    Since 1997, EcoLife has been on a mission to make sustainable living accessible to everyone. 
+    We partner with ethical suppliers, verify every claim with data, and empower you to make choices that protect our planet.
+  </p>
+</section>
+
+<!-- Featured Products -->
+<section class="py-16 bg-base-200">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-extrabold text-center mb-10">Featured Sustainable Products</h2>
+    <div class="grid gap-8 md:grid-cols-3">
+      <!-- Product Card -->
+      <div class="card bg-base-100 shadow-md">
+        <figure><img src="https://imgs.search.brave.com/ai7cQMqeIRTeHG_fp0uB53Dn4tANd9xcPXHkmcNfCyU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cy4x/MjNyZi5jb20vNDUw/d20vYW5uYXN0YXNp/aWE3L2FubmFzdGFz/aWlhNzIyMTAvYW5u/YXN0YXNpaWE3MjIx/MDAwMTgwLzE5Mjc0/NzMwMS13YXRlci1i/b3R0bGUtcmV1c2Fi/bGUtc3RlZWwtdGhl/cm1vLXdhdGVyLWJv/dHRsZS1vbi1ncmVl/bi1ncmFzcy1zdXN0/YWluYWJsZS1saWZl/c3R5bGUtcGxhc3Rp/Yy1mcmVlLmpwZz92/ZXI9Ng" alt="Reusable Bottle"/></figure>
+        <div class="card-body">
+          <h3 class="card-title">Reusable Water Bottle</h3>
+          <p>Durable, BPA-free, and made from recycled materials.</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary btn-sm">Shop Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product Card -->
+      <div class="card bg-base-100 shadow-md">
+        <figure><img src="https://imgs.search.brave.com/-7sbvXw3STGLF7mv3G7BCKmQHTL2xrKMkI-1tvaYEII/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzMwMDYxMTc5L3Iv/aWwvMTc5YmM4LzMx/NzI0MTc4NDEvaWxf/NjAweDYwMC4zMTcy/NDE3ODQxX2prZDEu/anBn" alt="Organic Cotton Tote"/></figure>
+        <div class="card-body">
+          <h3 class="card-title">Organic Cotton Tote</h3>
+          <p>Stylish, sturdy, and perfect for reducing plastic waste.</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary btn-sm">Shop Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product Card -->
+      <div class="card bg-base-100 shadow-md">
+        <figure><img src="https://imgs.search.brave.com/aafu61d_zEkr5LHgPpAEALlr0N2ameLll3mhy2-oqWI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YmFtYm9vc3dpdGNo/LmNvbS9jZG4vc2hv/cC9maWxlcy9iYW1i/b28tdG9vdGhicnVz/aC1jb21wb3N0YWJs/ZS1icmlzdGxlLTMw/NzQ4OC5qcGc_dj0x/NzU0NDE5MzM3Jndp/ZHRoPTIwMDA" alt="Bamboo Toothbrush"/></figure>
+        <div class="card-body">
+          <h3 class="card-title">Bamboo Toothbrush</h3>
+          <p>Eco-friendly alternative to plastic toothbrushes.</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary btn-sm">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-16 px-6 max-w-6xl mx-auto">
+  <h2 class="text-3xl font-extrabold text-center mb-10">What Our Customers Say</h2>
+  <div class="grid gap-8 md:grid-cols-3">
+    <div class="card bg-base-200 p-6">
+      <p>"EcoLife makes it so easy to shop sustainably. I love knowing my purchases make a difference!"</p>
+      <div class="mt-4 flex items-center gap-3">
+        <div class="avatar">
+          <div class="w-12 rounded-full">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer"/>
+          </div>
+        </div>
+        <div>
+          <p class="font-bold">Sarah L.</p>
+          <p class="text-sm opacity-70">EcoLife Customer</p>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-base-200 p-6">
+      <p>"High-quality products and a mission I believe in. EcoLife is my go-to for gifts and essentials."</p>
+      <div class="mt-4 flex items-center gap-3">
+        <div class="avatar">
+          <div class="w-12 rounded-full">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer"/>
+          </div>
+        </div>
+        <div>
+          <p class="font-bold">James K.</p>
+          <p class="text-sm opacity-70">EcoLife Customer</p>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-base-200 p-6">
+      <p>"I appreciate the transparency and the beautiful design of the products. Highly recommend!"</p>
+      <div class="mt-4 flex items-center gap-3">
+        <div class="avatar">
+          <div class="w-12 rounded-full">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer"/>
+          </div>
+        </div>
+        <div>
+          <p class="font-bold">Maria P.</p>
+          <p class="text-sm opacity-70">EcoLife Customer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-16 bg-primary text-primary-content text-center">
+  <h2 class="text-3xl font-extrabold mb-4">Join the EcoLife Movement</h2>
+  <p class="mb-6">Shop sustainably, live consciously, and make a positive impact today.</p>
+  <a class="btn btn-secondary btn-lg">Shop Now</a>
+</section>
+
+
+  <!-- Footer -->
+   <footer class="footer bg-base-200 text-base-content p-10 mt-10">
+      <aside>
+        <a class="btn btn-ghost text-xl font-extrabold"><span class="text-primary">Eco</span>Life</a>
+        <p>Transparent sustainability, powered by community and data.</p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About</a>
+        <a class="link link-hover">Careers</a>
+        <a class="link link-hover">Press</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Resources</h6>
+        <a class="link link-hover">Impact report</a>
+        <a class="link link-hover">Certifications</a>
+        <a class="link link-hover">Supplier portal</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Contact</h6>
+        <a class="link link-hover">hello@ecolife.example</a>
+        <a class="link link-hover">+880 1234‑567890</a>
+        <a class="link link-hover">Khulna, Bangladesh</a>
+      </nav>
+    </footer>
+</body>
+</html>
