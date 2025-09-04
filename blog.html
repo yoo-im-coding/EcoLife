@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="emerald">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoLife — Blog & Resources</title>
+
+  <!-- Tailwind + DaisyUI -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="bg-base-100 text-base-content">
+
+<!-- Navbar -->
+<header class="navbar bg-base-100/60 backdrop-blur supports-[backdrop-filter]:bg-base-100/60 sticky top-0 z-50 border-b border-base-200">
+      <div class="navbar-start">
+        <a class="btn btn-ghost text-xl font-extrabold tracking-tight" href="#">
+          <span class="text-primary">Eco</span>Life
+        </a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end gap-2">
+        <label class="swap swap-rotate btn btn-ghost btn-sm">
+          <input type="checkbox" class="theme-controller" value="emerald" checked />
+          <svg class="swap-off fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71A8.969,8.969,0,0,0,12,21a9.049,9.049,0,0,0,9-9h-1a8,8,0,1,1-8-8V3A9,9,0,0,0,5.64,17Z"/></svg>
+          <svg class="swap-on fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.76,4.84l-1.8-1.79L3.17,4.84,4.98,6.64ZM1,13H4V11H1Zm9-9H11V1H10ZM19.02,6.64l1.8-1.8L19.02,3,17.22,4.84ZM20,13h3V11H20ZM11,23h1V20H11ZM17.22,19.16,19,21,20.84,19.16,19,17.36ZM3.17,19.16,4.98,21,6.76,19.16,4.98,17.36Z"/></svg>
+        </label>
+        <a class="btn btn-primary btn-sm" href="products.html" >Shop now</a>
+      </div>
+    </header>
+
+<main class="max-w-7xl mx-auto px-6 py-12 grid lg:grid-cols-3 gap-10">
+
+  <!-- Main Blog Content -->
+  <section class="lg:col-span-2 space-y-10">
+
+    <!-- Article 1 -->
+    <article class="card bg-base-100 shadow-md">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=800&auto=format&fit=crop" alt="Sustainable Gardening"/>
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">5 Tips for a More Sustainable Garden</h2>
+        <p>Learn how to grow your own food and flowers while reducing waste and conserving water.</p>
+        <div class="card-actions justify-end">
+          <a href="#" class="btn btn-outline btn-primary btn-sm">Read More</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Article 2 -->
+    <article class="card bg-base-100 shadow-md">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=800&auto=format&fit=crop" alt="Zero Waste Kitchen"/>
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Zero Waste Kitchen Hacks</h2>
+        <p>Practical tips to reduce food waste, compost effectively, and store food sustainably.</p>
+        <div class="card-actions justify-end">
+          <a href="#" class="btn btn-outline btn-primary btn-sm">Read More</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Article 3 -->
+    <article class="card bg-base-100 shadow-md">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1508873699372-7aeab60b44a7?q=80&w=800&auto=format&fit=crop" alt="Eco-Friendly Travel"/>
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Eco-Friendly Travel: How to Explore Responsibly</h2>
+        <p>Discover ways to minimize your carbon footprint while enjoying your adventures.</p>
+        <div class="card-actions justify-end">
+          <a href="#" class="btn btn-outline btn-primary btn-sm">Read More</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Embedded Video -->
+    <div class="mt-12">
+      <h3 class="text-2xl font-bold mb-4">Watch: Sustainability Explained</h3>
+      <div class="aspect-w-16 aspect-h-9">
+        <iframe class="w-full h-96 rounded-box" src="https://www.youtube.com/embed/_5r4loXPyx8" 
+          title="Sustainability Explained" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Sidebar -->
+  <aside class="space-y-8">
+
+    <!-- Recent Posts -->
+    <div class="bg-base-200 p-6 rounded-box">
+      <h3 class="text-xl font-bold mb-4">Recent Posts</h3>
+      <ul class="list-disc list-inside space-y-2">
+        <li><a href="#" class="link link-hover">10 Ways to Reduce Plastic Use</a></li>
+        <li><a href="#" class="link link-hover">Composting 101</a></li>
+        <li><a href="#" class="link link-hover">Best Indoor Plants for Air Quality</a></li>
+      </ul>
+    </div>
+
+    <!-- Popular Tags -->
+    <div class="bg-base-200 p-6 rounded-box">
+      <h3 class="text-xl font-bold mb-4">Popular Tags</h3>
+      <div class="flex flex-wrap gap-2">
+        <span class="badge badge-outline">Sustainability</span>
+        <span class="badge badge-outline">Zero Waste</span>
+        <span class="badge badge-outline">Gardening</span>
+        <span class="badge badge-outline">Travel</span>
+        <span class="badge badge-outline">DIY</span>
+      </div>
+    </div>
+
+    <!-- Newsletter Signup -->
+    <div class="bg-base-200 p-6 rounded-box">
+      <h3 class="text-xl font-bold mb-4">Subscribe to Our Newsletter</h3>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name" class="input input-bordered w-full" required/>
+        <input type="email" placeholder="Your Email" class="input input-bordered w-full" required/>
+        <button type="submit" class="btn btn-primary w-full">Subscribe</button>
+      </form>
+    </div>
+
+    <!-- Resource Links -->
+    <div class="bg-base-200 p-6 rounded-box">
+      <h3 class="text-xl font-bold mb-4">Eco-Friendly Resources</h3>
+      <ul class="list-disc list-inside space-y-2">
+        <li><a href="https://www.wwf.org" target="_blank" class="link link-hover">World Wildlife Fund</a></li>
+        <li><a href="https://www.greenpeace.org" target="_blank" class="link link-hover">Greenpeace</a></li>
+        <li><a href="https://www.epa.gov" target="_blank" class="link link-hover">US Environmental Protection Agency</a></li>
+      </ul>
+    </div>
+
+  </aside>
+
+</main>
+
+<!-- Footer -->
+   <footer class="footer bg-base-200 text-base-content p-10 mt-10">
+      <aside>
+        <a class="btn btn-ghost text-xl font-extrabold"><span class="text-primary">Eco</span>Life</a>
+        <p>Transparent sustainability, powered by community and data.</p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About</a>
+        <a class="link link-hover">Careers</a>
+        <a class="link link-hover">Press</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Resources</h6>
+        <a class="link link-hover">Impact report</a>
+        <a class="link link-hover">Certifications</a>
+        <a class="link link-hover">Supplier portal</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Contact</h6>
+        <a class="link link-hover">hello@ecolife.example</a>
+        <a class="link link-hover">+880 1234‑567890</a>
+        <a class="link link-hover">Khulna, Bangladesh</a>
+      </nav>
+    </footer>
+
+</body>
+</html>
