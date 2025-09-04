@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="emerald">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoLife — Products</title>
+
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- DaisyUI -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"/>
+
+  <!-- Optional font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-base-100 text-base-content">
+
+<!-- Navbar -->
+<header class="navbar bg-base-100/60 backdrop-blur supports-[backdrop-filter]:bg-base-100/60 sticky top-0 z-50 border-b border-base-200">
+      <div class="navbar-start">
+        <a class="btn btn-ghost text-xl font-extrabold tracking-tight" href="#">
+          <span class="text-primary">Eco</span>Life
+        </a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end gap-2">
+        <label class="swap swap-rotate btn btn-ghost btn-sm">
+          <input type="checkbox" class="theme-controller" value="emerald" checked />
+          <svg class="swap-off fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71A8.969,8.969,0,0,0,12,21a9.049,9.049,0,0,0,9-9h-1a8,8,0,1,1-8-8V3A9,9,0,0,0,5.64,17Z"/></svg>
+          <svg class="swap-on fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.76,4.84l-1.8-1.79L3.17,4.84,4.98,6.64ZM1,13H4V11H1Zm9-9H11V1H10ZM19.02,6.64l1.8-1.8L19.02,3,17.22,4.84ZM20,13h3V11H20ZM11,23h1V20H11ZM17.22,19.16,19,21,20.84,19.16,19,17.36ZM3.17,19.16,4.98,21,6.76,19.16,4.98,17.36Z"/></svg>
+        </label>
+        <a class="btn btn-primary btn-sm" href="products.html" >Shop now</a>
+      </div>
+    </header>
+<main class="max-w-7xl mx-auto px-6 py-12 space-y-16">
+
+  <!-- Search / Filter -->
+  <section>
+    <h2 class="text-3xl font-extrabold mb-6">Find Your Sustainable Products</h2>
+    <form class="grid md:grid-cols-4 gap-4 bg-base-200 p-6 rounded-box">
+      <input type="text" placeholder="Search products..." class="input input-bordered w-full" />
+      <select class="select select-bordered w-full">
+        <option disabled selected>Category</option>
+        <option>Kitchen</option>
+        <option>Bathroom</option>
+        <option>Office</option>
+        <option>Outdoor</option>
+      </select>
+      <select class="select select-bordered w-full">
+        <option disabled selected>Price Range</option>
+        <option>$0 - $20</option>
+        <option>$20 - $50</option>
+        <option>$50 - $100</option>
+        <option>$100+</option>
+      </select>
+      <button class="btn btn-primary w-full">Search</button>
+    </form>
+  </section>
+
+  <!-- Categories -->
+  <section>
+    <h2 class="text-3xl font-extrabold mb-6">Product Categories</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="card bg-base-200 shadow-md">
+        <figure><img src="https://imgs.search.brave.com/Je70IqATpRy6XR1AdzZnh8_pw-CP-DfRQtS6MQ68i8I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idW5u/eS13cC1wdWxsem9u/ZS1udmtxbjhxb3Jo/LmItY2RuLm5ldC93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyMy8w/My93YXN0ZS1mcmVl/LWtpdGNoZW4tcHJv/ZHVjdHNfMmJjZjdl/Y2MtY2M5MS00YTkx/LWJjOTMtMGUzMjIx/MDZkMDUwXzIwNDh4/MjA0OC53ZWJw?q=80&w=800&auto=format&fit=crop" alt="Kitchen"/></figure>
+        <div class="card-body">
+          <h3 class="card-title">Kitchen</h3>
+          <p>Eco-friendly utensils, containers, and cookware.</p>
+        </div>
+      </div>
+      <div class="card bg-base-200 shadow-md">
+        <figure><img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?q=80&w=800&auto=format&fit=crop" alt="Bathroom"/></figure>
+        <div class="card-body">
+          <h3 class="card-title">Bathroom</h3>
+          <p>Organic towels, bamboo toothbrushes, and more.</p>
+        </div>
+      </div>
+      <div class="card bg-base-200 shadow-md">
+        <figure><img src="https://imgs.search.brave.com/LKcj7J_0DywiYwtqfeZQZZhP-mYURd3k54xsYYazJXc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMyLmpldHBlbnMu/Y29tL2ltYWdlcy9h/LzAwMC8yMTUvMjE1/NTcwLmpwZz9hdXRv/PWZvcm1hdCZjaHJv/bWFzdWI9NDQ0JmZt/PWpwZyZxPTkwJnVz/bT0yMCZ3PTI4MCZz/PTE3OTg0MDE0Yjcz/MTJiMGVkZDRlOTYw/ZGEyMDM2NjE2?q=80&w=800&auto=format&fit=crop" alt="Office"/></figure>
+        <div class="card-body">
+          <h3 class="card-title">Office</h3>
+          <p>Recycled paper, refillable pens, and desk plants.</p>
+        </div>
+      </div>
+      <div class="card bg-base-200 shadow-md">
+        <figure><img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=800&auto=format&fit=crop" alt="Outdoor"/></figure>
+        <div class="card-body">
+          <h3 class="card-title">Outdoor</h3>
+          <p>Solar lights, compost bins, and garden tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section>
+    <h2 class="text-3xl font-extrabold mb-6">Featured Products</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="card bg-base-100 shadow-md">
+        <figure><img src="https://imgs.search.brave.com/3qfzyr7IUb5lxa8vRw_8g0AeLHRd_foc8ecnqYOyYPo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jaXJj/dWxhcmFuZGNvLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/NS8wNi9DaXJjdWxh/ckNvLVdlYnNpdGVf/LVN0YWlubGVzcy1T/dGVlbF9SZXVzYWJs/ZS1Cb3R0bGVfLVNl/YWdsYXNzLUdyZWVu/LV83NTBtbC02MDB4/NjAwLmpwZw?q=80&w=800&auto=format&fit=crop" alt="Reusable Bottle"/></figure>
+        <div class="card-body">
+          <h3 class="card-title">Reusable Water Bottle</h3>
+          <p>Made from recycled stainless steel, keeps drinks cold for 24h.</p>
+          <div class="card-actions justify-end">
+            <span class="font-bold">$25</span>
+            <button class="btn btn-primary btn-sm">Buy</button>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-100 shadow-md">
+        <figure><img src="https://imgs.search.brave.com/-7sbvXw3STGLF7mv3G7BCKmQHTL2xrKMkI-1tvaYEII/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzMwMDYxMTc5L3Iv/aWwvMTc5YmM4LzMx/NzI0MTc4NDEvaWxf/NjAweDYwMC4zMTcy/NDE3ODQxX2prZDEu/anBn?q=80&w=800&auto=format&fit=crop" alt="Organic Tote"/></figure>
+        <div class="card-body">
+          <h3 class="card-title">Organic Cotton Tote</h3>
+          <p>Durable, washable, and perfect for grocery runs.</p>
+          <div class="card-actions justify-end">
+            <span class="font-bold">$15</span>
+            <button class="btn btn-primary btn-sm">Buy</button>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-100 shadow-md">
+        <figure><img src="https://imgs.search.brave.com/aafu61d_zEkr5LHgPpAEALlr0N2ameLll3mhy2-oqWI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YmFtYm9vc3dpdGNo/LmNvbS9jZG4vc2hv/cC9maWxlcy9iYW1i/b28tdG9vdGhicnVz/aC1jb21wb3N0YWJs/ZS1icmlzdGxlLTMw/NzQ4OC5qcGc_dj0x/NzU0NDE5MzM3Jndp/ZHRoPTIwMDA?q=80&w=800&auto=format&fit=crop" alt="Bamboo Toothbrush"/></figure>
+        <div class="card-body">
+          <h3 class="card-title">Bamboo Toothbrush</h3>
+          <p>Compostable handle, soft plant-based bristles.</p>
+          <div class="card-actions justify-end">
+            <span class="font-bold">$5</span>
+            <button class="btn btn-primary btn-sm">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Table -->
+  <section>
+    <h2 class="text-3xl font-extrabold mb-6">Pricing Plans</h2>
+    <div class="overflow-x-auto">
+      <table class="table table-zebra w-full">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Basic</th>
+            <th>Premium</th>
+            <th>Deluxe</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Reusable Bottle</td>
+            <td>$25</td>
+            <td>$35 (with filter)</td>
+            <td>$45 (filter + case)</td>
+          </tr>
+          <tr>
+            <td>Organic Tote</td>
+            <td>$15</td>
+            <td>$20 (extra pocket)</td>
+            <td>$30 (custom print)</td>
+          </tr>
+          <tr>
+            <td>Bamboo Toothbrush</td>
+            <td>$5</td>
+            <td>$8 (pack of 2)</td>
+            <td>$15 (pack of 4)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Download Catalog -->
+  <section class="text-center">
+    <h2 class="text-3xl font-extrabold mb-4">Download Our Full Catalog</h2>
+    <p class="mb-6">Explore our complete range of sustainable products in our    <p class="mb-6">Explore our complete range of sustainable products in our
+      beautifully designed PDF catalog.</p>
+    <a href="https://example.com/catalog.pdf" 
+       class="btn btn-outline btn-primary" 
+       download>
+       📄 Download Catalog
+    </a>
+  </section>
+
+</main>
+
+<!-- Footer -->
+   <footer class="footer bg-base-200 text-base-content p-10 mt-10">
+      <aside>
+        <a class="btn btn-ghost text-xl font-extrabold"><span class="text-primary">Eco</span>Life</a>
+        <p>Transparent sustainability, powered by community and data.</p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About</a>
+        <a class="link link-hover">Careers</a>
+        <a class="link link-hover">Press</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Resources</h6>
+        <a class="link link-hover">Impact report</a>
+        <a class="link link-hover">Certifications</a>
+        <a class="link link-hover">Supplier portal</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Contact</h6>
+        <a class="link link-hover">hello@ecolife.example</a>
+        <a class="link link-hover">+880 1234‑567890</a>
+        <a class="link link-hover">Khulna, Bangladesh</a>
+      </nav>
+    </footer>
+
+</body>
+</html>
